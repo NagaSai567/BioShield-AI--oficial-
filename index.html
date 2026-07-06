@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioShield AI - Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div id="bg-pan"></div>
+    <div class="video-overlay"></div>
+
+    <!-- Google Translate Element -->
+    <div id="google_translate_element" class="translate-widget"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="glass-sidebar">
+            <div class="logo">BioShield<span>AI</span></div>
+            <ul class="nav-links">
+                <li class="active" data-tab="pesticides">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                    Disease Index & Info
+                </li>
+                <li data-tab="fertilizers">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    Fertilizer Guide
+                </li>
+                <li data-tab="schemes">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    Gov Schemes
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Pesticides Tab -->
+            <section id="pesticides" class="tab-content active">
+                <header class="section-header">
+                    <h1>Crop Disease Index</h1>
+                    <div class="search-container">
+                        <input type="text" id="search-pesticides" placeholder="Search by crop name (e.g. Rice, Sugarcane)..." class="glass-input">
+                    </div>
+                </header>
+                <div class="grid-container" id="pesticides-grid"></div>
+            </section>
+
+            <!-- Fertilizers Tab -->
+            <section id="fertilizers" class="tab-content">
+                <header class="section-header">
+                    <h1>Fertilizer & Manure Guide</h1>
+                    <div class="search-container">
+                        <input type="text" id="search-fertilizers" placeholder="Search by crop name (e.g. Tomato, Cotton)..." class="glass-input">
+                    </div>
+                </header>
+                <div class="grid-container" id="fertilizers-grid"></div>
+            </section>
+
+            <!-- Gov Schemes Tab -->
+            <section id="schemes" class="tab-content">
+                <header class="section-header">
+                    <h1>Government Schemes</h1>
+                    <p>Latest agricultural welfare programs.</p>
+                    <small id="schemes-updated" class="last-updated"></small>
+                </header>
+                <div class="grid-container" id="schemes-grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Google Translate Script (Restricted Languages) -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,bn,te,mr,ta,ur,gu,kn,ml,pa',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
