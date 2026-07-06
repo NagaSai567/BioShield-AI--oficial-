@@ -12,8 +12,11 @@
     <div id="bg-pan"></div>
     <div class="video-overlay"></div>
 
-    <!-- Google Translate Element -->
-    <div id="google_translate_element" class="translate-widget"></div>
+    <!-- Google Translate Element with Icon -->
+    <div class="translate-container">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="translate-icon"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"></path></svg>
+        <div id="google_translate_element" class="translate-widget"></div>
+    </div>
 
     <div class="app-container">
         <!-- Sidebar Navigation -->
@@ -21,15 +24,18 @@
             <div class="logo">BioShield<span>AI</span></div>
             <ul class="nav-links">
                 <li class="active" data-tab="pesticides">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
-                    Disease Index & Info
+                    <!-- Spray Icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"></path><path d="M4 14v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"></path><path d="M4 10h16v4H4z"></path><path d="M12 14v4"></path><path d="M10 2h4"></path></svg>
+                    Pesticide Awareness
                 </li>
                 <li data-tab="fertilizers">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    Fertilizer Guide
+                    <!-- Droplet Icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                    Fertilizers and Manures
                 </li>
                 <li data-tab="schemes">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    <!-- Courthouse Icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M12 3l-9 6v2h18V9l-9-6z"></path><path d="M6 11v6"></path><path d="M10 11v6"></path><path d="M14 11v6"></path><path d="M18 11v6"></path></svg>
                     Gov Schemes
                 </li>
             </ul>
@@ -41,7 +47,7 @@
             <!-- Pesticides Tab -->
             <section id="pesticides" class="tab-content active">
                 <header class="section-header">
-                    <h1>Crop Disease Index</h1>
+                    <h1>Pesticide Awareness</h1>
                     <div class="search-container">
                         <input type="text" id="search-pesticides" placeholder="Search by crop name (e.g. Rice, Sugarcane)..." class="glass-input">
                     </div>
@@ -52,7 +58,7 @@
             <!-- Fertilizers Tab -->
             <section id="fertilizers" class="tab-content">
                 <header class="section-header">
-                    <h1>Fertilizer & Manure Guide</h1>
+                    <h1>Fertilizers and Manures</h1>
                     <div class="search-container">
                         <input type="text" id="search-fertilizers" placeholder="Search by crop name (e.g. Tomato, Cotton)..." class="glass-input">
                     </div>
