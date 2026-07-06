@@ -111,7 +111,7 @@ body {
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
 .section-header { margin-bottom: 30px; }
-.section-header h1 { font-size: 36px; margin-bottom: 10px; font-weight: 600; }
+.section-header h1 { font-size: 36px; margin-bottom: 10px; font-weight: 600; color: #87CEFA; }
 .section-header p { color: var(--text-secondary); font-size: 16px; }
 
 /* Search Bar (Enhanced) */
@@ -133,7 +133,7 @@ body {
     transition: transform 0.3s ease;
 }
 .data-card:hover { transform: translateY(-5px); border-color: rgba(255,255,255,0.3); }
-.data-card h3 { color: #fff; margin-bottom: 12px; font-size: 22px; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; }
+.data-card h3 { color: #87CEFA; margin-bottom: 12px; font-size: 22px; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; font-weight: 700; }
 .data-card p { color: var(--text-secondary); font-size: 15px; line-height: 1.6; margin-bottom: 10px; }
 .data-card p strong { color: #fff; }
 .data-card a { color: var(--accent-color); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px; }
